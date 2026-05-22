@@ -1,3 +1,4 @@
+import path from 'path'
 import { defineConfig, type UserConfigExport } from '@tarojs/cli'
 
 import devConfig from './dev'
@@ -17,10 +18,15 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
     },
     sourceRoot: 'src',
     outputRoot: 'dist',
+    alias: {
+      '@': path.resolve(__dirname, '..', 'src'),
+    },
     plugins: [
       "@tarojs/plugin-generator"
     ],
     defineConstants: {
+      TARO_APP_API_BASE_URL: JSON.stringify(process.env.TARO_APP_API_BASE_URL || ''),
+      TARO_APP_TEAM_ID: JSON.stringify(process.env.TARO_APP_TEAM_ID || '1'),
     },
     copy: {
       patterns: [
@@ -31,6 +37,11 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
     framework: 'react',
     compiler: 'vite',
     mini: {
+      vite: {
+        resolve: {
+          dedupe: ['react'],
+        },
+      },
       postcss: {
         pxtransform: {
           enable: true,

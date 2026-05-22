@@ -1,0 +1,22 @@
+.nav-bar {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav-bar__inner {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 32rpx;
+}
+
+.nav-bar__title {
+  color: var(--text-primary);
+  font-size: 34rpx;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.nav-bar__extra {
+  margin-left: auto;
+}

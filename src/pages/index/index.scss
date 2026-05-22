@@ -1,0 +1,29 @@
+.index {
+  background-color: var(--bg-primary);
+}
+
+.index-body {
+  flex: 1;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32rpx;
+  gap: 24rpx;
+}
+
+.team-info__logo {
+  width: 96rpx;
+  height: 96rpx;
+  flex-shrink: 0;
+  border-radius: 16rpx;
+}
+
+.team-info__name {
+  flex: 1;
+  color: var(--text-primary);
+  font-size: 36rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,71 @@
+// 足球球队管理小程序 · 推荐色系（深色体育风）
+// 风格关键词：夜场 / 草坪 / 数据大屏 / 竞技感
+
+// SCSS 变量（可在其他 scss 中 @import 后使用）
+$bg-primary: #0f172a;
+$bg-secondary: #111827;
+$bg-tertiary: #1f2937;
+
+$brand-primary: #22c55e;
+$brand-hover: #16a34a;
+$brand-light: #4ade80;
+
+$status-success: #22c55e;
+$status-warning: #f59e0b;
+$status-danger: #ef4444;
+$status-info: #3b82f6;
+
+$text-primary: #f9fafb;
+$text-secondary: #d1d5db;
+$text-muted: #9ca3af;
+$text-disabled: #6b7280;
+
+$border-primary: #374151;
+$border-secondary: #4b5563;
+
+$match-win: #22c55e;
+$match-lose: #ef4444;
+$match-draw: #f59e0b;
+$match-score: #facc15;
+$match-mvp: #fbbf24;
+
+$ranking-top1: #fbbf24;
+$ranking-top2: #d1d5db;
+$ranking-top3: #b45309;
+
+// CSS 变量（供各页面 class 通过 var() 引用）
+page {
+  --bg-primary: #{$bg-primary};
+  --bg-secondary: #{$bg-secondary};
+  --bg-tertiary: #{$bg-tertiary};
+
+  --brand-primary: #{$brand-primary};
+  --brand-hover: #{$brand-hover};
+  --brand-light: #{$brand-light};
+
+  --status-success: #{$status-success};
+  --status-warning: #{$status-warning};
+  --status-danger: #{$status-danger};
+  --status-info: #{$status-info};
+
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-muted: #{$text-muted};
+  --text-disabled: #{$text-disabled};
+
+  --border-primary: #{$border-primary};
+  --border-secondary: #{$border-secondary};
+
+  --match-win: #{$match-win};
+  --match-lose: #{$match-lose};
+  --match-draw: #{$match-draw};
+  --match-score: #{$match-score};
+  --match-mvp: #{$match-mvp};
+
+  --ranking-top1: #{$ranking-top1};
+  --ranking-top2: #{$ranking-top2};
+  --ranking-top3: #{$ranking-top3};
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
